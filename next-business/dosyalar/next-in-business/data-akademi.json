@@ -1,0 +1,114 @@
+[
+    {
+        "date": "16 Ekim 2021,<br /> Cumartesi",
+        "where": "2,5 Saat",
+        "type": "Sınıf Eğitimi",
+        "title": "CFO’ların Kurumlardaki Stratejik Önemi;",
+        "description": "Cenk Ulu, PwC Türkiye Kıdemli Ortağı"
+    },
+    {
+        "date": "27 Ekim 2021,<br />Çarşamba",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "YK Üyelerinin Sorumlulukları",
+        "description": "Nilgün Serdar Şimşek, PwC Türkiye Şirket Ortağı"
+    },
+    {
+        "date": "27 Ekim 2021,<br />Çarşamba",
+        "where": "2,5 Saat",
+        "type": "Sınıf Eğitimi",
+        "title": "Makroekonomik Veriler Çerçevesinde Türkiye Ekonomisi",
+        "description": "Başar Yıldırım"
+    },
+    {
+        "date": "16 Ekim 2021,<br /> Cumartesi",
+        "where": "2,5 Saat",
+        "type": "Sınıf Eğitimi",
+        "title": "ESG dönüşümü (green deal'ın iş dünyasına etkisi)",
+        "description": "Lorem"
+    },
+    {
+        "date": "16 Ekim 2021,<br /> Cumartesi",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "CFO’lar için Geleceğin İnsan Yönetimi & Çevik Organizasyon Tasarımı",
+        "description": "Ülker Day"
+    },
+    {
+        "date": "16 Ekim 2021,<br /> Cumartesi",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "CFO'lara özgü Uluslararası Finansal Raporlama Standartları",
+        "description": "Ramazan Yüksekkaya"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Finansal Riskler ve Yönetim Teknikleri",
+        "description": "Gökçe Yaşar"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Sürdürülebilir Finansın Temelleri ve Entegre Raporlama",
+        "description": "Ediz Günsel"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Uçtan Uca M&A Süreci",
+        "description": "Kaan Kırtay"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Şirket Değerleme Yöntemleri ve Uygulamaları",
+        "description": "Serkan Aslan"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Sınıf Eğitimi",
+        "title": "Strateji ve Operasyonel Dönüşüm",
+        "description": "Yiğit Arslan"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Dijital Dönüşümün Dinamikleri (Blockchain, IoT, AI)",
+        "description": "Cem Aracı"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Siber Güvenlik, Yolsuzluk ve Suistimal Riskleri",
+        "description": "Ulvi Cemal Bucak"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Uluslararası Vergilendirme Stratejileri (BEPS, Transfer Fiyatlandırması, KV Uygulamaları)",
+        "description": "Burcu Canpolat"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Finansal Yeniden Yapılandırma & Proje Finansmanı & Genel ve Sıfır Tabanlı Bütçe",
+        "description": "Mevlüt Akbaş"
+    },
+    {
+        "date": "13 Kasım 2021,<br /> Perşembe",
+        "where": "2,5 Saat",
+        "type": "Online Eğitimi",
+        "title": "Kapanış - Konuşmacı Sunumu & Sertifika Töreni",
+        "description": "Cenk Ulu, PwC Türkiye Kıdemli Ortağı"
+    }
+]

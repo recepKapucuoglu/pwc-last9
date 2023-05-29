@@ -1,0 +1,3 @@
+
+RewriteEngine on
+RewriteRule !\.(php|txt|gif|jpg|png|css|swf|js|mp4|MTS|xml|xsl|html|htm|pdf|PDF|ico|flv|svg|ttf|woff|eot|zip)$ _access.php

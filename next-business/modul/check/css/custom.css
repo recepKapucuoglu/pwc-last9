@@ -1,0 +1,38 @@
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+body {
+	padding: 40px 0;
+	font: 14px 'Lato Sans', sans-serif;
+	line-height: 2em;
+}
+h1,h2,h3,h4,h5,h6 { font-weight: 300; }
+
+.container {
+	max-width: 900px;
+}
+
+.header { text-align: center; }
+.header .logo {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 20px;
+}
+.header nav {
+	border-bottom: 1px solid #f1f1f1;
+	padding-bottom: 30px;
+}
+
+.test li {
+	margin-top: 15px;
+}
+.test div.col-md-1 {
+	text-align: center;
+}
+.test-columns-head {
+	font-size: 10px;
+	font-weight: 500;
+	text-align: center;
+}

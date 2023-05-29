@@ -1,0 +1,12 @@
+Sitemap: https://www.okul.pwc.com.tr/sitemap.xml
+User-agent: *
+Disallow: /panel/
+Disallow: /bilgi-formu/* 
+Disallow: /uyelik/* 
+Disallow: /katilimcilar/* 
+Disallow: /sepet-odeme/* 
+Disallow: /sepet-ozet/* 
+Disallow: /sepet-sonuc/* 
+Disallow: /sonuc/* 
+Disallow: /platform/* 
+disallow: ?s=*

@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "title":"1. Oturum Workshoplar",
+        "start":"09:00",
+        "end":"09:45",
+        "date":"",
+        "price":0,
+        "saloon":"",
+        "speaker":""
+    },
+    {
+        "id": 2,
+        "title":"Kahve Arası",
+        "start":"09:45",
+        "end":"10:00",
+        "date":"",
+        "price":0,
+        "saloon":"",
+        "speaker":""
+    },
+    {
+        "id": 3,
+        "title":"Ana Oturum: Yeni Denklem, Çözümü Birlikte Üretmek",
+        "start":"10:00",
+        "end":"11:15",
+        "date":"",
+        "price":0,
+        "saloon":"",
+        "speaker":"<p><span class='brandingColor'>Açılış:</span><b>Cenk Ulu</b> - PwC Türkiye Kıdemli Ortağı <span class='brandingColor'>Moderatör:</span> <b>Ersun Bayraktaroğlu</b> - PwC Türkiye Şirket Ortağı <span class='brandingColor'>Konuşmacılar:</span> <b>Melis Abacıoğlu</b> - Wellbees Kurucusu <br><b>Erdem Şekeroğlu</b> - SAP Türkiye COO</p>"
+    },
+    {
+        "id": 4,
+        "title":"Kahve Arası",
+        "start":"11:15",
+        "end":"11:30",
+        "date":"",
+        "price":0,
+        "saloon":"",
+        "speaker":""
+    },
+    {
+        "id": 5,
+        "title":"2. Oturum Workshoplar",
+        "start":"11:30",
+        "end":"12:15",
+        "date":"",
+        "price":0,
+        "saloon":"",
+        "speaker":""
+    },
+    {
+        "id": 6,
+        "title":"Öğle Arası",
+        "start":"12:00",
+        "end":"12:45",
+        "date":"",
+        "price":0,
+        "saloon":"",
+        "speaker":""
+    },
+    {
+        "id": 7,
+        "title":"3. Oturum Workshoplar",
+        "start":"12:45",
+        "end":"13:30",
+        "date":"",
+        "price":0,
+        "saloon":"",
+        "speaker":""
+    },
+    {
+        "id": 8,
+        "title":"Kahve Arası",
+        "start":"13:30",
+        "end":"13:45",
+        "date":"13 Aralık",
+        "price":0,
+        "saloon":"",
+        "speaker":"</p>"
+    },
+    {
+        "id": 9,
+        "title":"Vergi Oturumu",
+        "start":"14:00",
+        "end":"15:15",
+        "date":"13 Aralık",
+        "price":0,
+        "saloon":"",
+        "speaker":"<p><span class='brandingColor'>Konuşmacılar:</span><b>Burcu Canpolat</b> - PwC Türkiye Vergi Hizmetleri Lideri <br><b>Zeki Gündüz</b> - PwC Türkiye Şirket Ortağı <br><b>Cem Aracı</b> - PwC Türkiye Dolaylı Vergi Hizmetleri Lideri <br><b>Ulaş Ceylanlı</b> - PwC Türkiye Şirket Ortağı</p>"
+    }
+    
+]
