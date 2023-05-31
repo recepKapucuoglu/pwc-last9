@@ -190,7 +190,7 @@ if ($_POST['id']) {
 						}
 					}
 				} else {
-					echo '<div class="alert alert-danger">• Şifreniz en az 8 karakter uzunluğunda olmalı, <br/>• Büyük/küçük harf, rakam veya özel karakter içermelidir.</div>';
+					echo '<div class="alert alert-danger">• Şifreniz en az 10 karakter uzunluğunda olmalı, <br/>• Büyük/küçük harf, rakam veya özel karakter içermelidir.</div>';
 				}
 			}
 

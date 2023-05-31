@@ -22,7 +22,7 @@
 						<center>
 							<img src="dosyalar/images/yer-icon-2.png" alt="" style="margin-bottom:20px; width:30px" />
 							<h2>Konum</h2>
-							<p>Vişnezade Mahallesi, Süleyman Seba Cad.<br />BJK Plaza No:48 B Blok, 34357 <br />Akaretler / Beşiktaş / İstanbul</p>
+							<p>Premier kampüs Ofis Adres: Gürsel, İmrahor Cd. No: 29, B Blok 6.kat 34400<br />Kâğıthane/İstanbul</p>
 							
 							<br />
 							<br />

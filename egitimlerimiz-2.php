@@ -21,7 +21,7 @@ foreach ($results as $value) {
 }
 
 ?>
-<section id="sayfaust" style="background-image:url(<?php echo $site_url . $banner; ?>);">
+<section id="sayfaust" style="background-image:url(<?php echo $banner; ?>);">
 	<div class="basliklar">
 		<div class="baslik">
 			<?php echo $kategori_adi; ?>
@@ -44,8 +44,11 @@ foreach ($results as $value) {
 		</ol>
 	</div>
 </section>
-<section class="ortakisim">
 
+<section class="ortakisim">
+<div class="container">
+	<?php echo $aciklama; ?>
+</div>
 <div class="education-type">
 		<div class="container education-type__container">
 			<div class="education-type_container">

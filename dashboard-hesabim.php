@@ -152,7 +152,7 @@ if ($_SESSION['dashboardUser']){?>
 												<div class="col-sm-12 input-effect">
 													<span>
 														<input class="magic-checkbox" type="checkbox" id="check1" name="notification" value="1" <?php if($notification==1) echo "checked"; ?>/>
-														<label for="check1">Yeni açılan eğitimler için haberdar olmak istiyorum.</label>
+														<!-- <label for="check1">Yeni açılan eğitimler için haberdar olmak istiyorum.</label> -->
 													</span>
 												</div>
 											</div>

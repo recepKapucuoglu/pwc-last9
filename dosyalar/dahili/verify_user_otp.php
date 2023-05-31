@@ -11,10 +11,15 @@ if ($_SESSION['dashboardUser'] && $_SESSION['dashboardUser']!="uyeol_step1" && $
     $db->where('email',$_SESSION['dashboardUser']);
 	$db->where('expression_time >= NOW() - INTERVAL 2 MINUTE');
 	$results = $db->get('web_user');
+    // Kullanıcı login olduktan sonra en son kaldığı yere yönlendiriyoruz.
 	foreach ($results as $row) {
 		$isActive = $row['expression_time'];
         $last_page_url=$row['last_page_url'];
 	}
+    // eğer boşsa ya da null ise
+    if (is_null($last_page_url) || empty($last_page_url)) {
+        $last_page_url ="https://www.okul.pwc.com.tr/";
+    }
     if($isActive!=null || $isActive!=""){ //kod geçerliyse
     // user tarafından gönderilen tek kullanımlık şifre [name="otp"]
     $actual = valueClear($_POST["otp"]);
@@ -22,11 +27,7 @@ if ($_SESSION['dashboardUser'] && $_SESSION['dashboardUser']!="uyeol_step1" && $
     $db->where('email', $_SESSION['dashboardUser']);
     $results = $db->getOne('web_user');
     $expected = $results["activation_code"];
-    // Kullanıcı login olduktan sonra en son kaldığı yere yönlendiriyoruz.
-    // eğer boşsa ya da null ise
-    if (is_null($last_page_url) || empty($last_page_url)) {
-        $last_page_url ="https://www.okul.pwc.com.tr/dashboard.php";
-    }
+  
     // eğer bilgiler eşleşmiyorsa
     if ($actual != $expected) {
         echo '<div class="alert alert-danger"><strong>Uyarı!</strong> 
@@ -45,7 +46,7 @@ if ($_SESSION['dashboardUser'] && $_SESSION['dashboardUser']!="uyeol_step1" && $
              // Kullanıcının son kaldığı yeri alıyoruz
             echo "<script> setTimeout(function(){
                 window.location.href =`$last_page_url`;
-             }, 3000);</script>";
+             }, 100);</script>";
          
 
         } else {

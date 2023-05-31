@@ -395,8 +395,7 @@ header .logobar .mobilbar {
     color: #fff;
     align-content: center;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
+    justify-content: space-between
 }
 
 header .logobar .mobilbar .mobil_menuac {
@@ -1561,9 +1560,9 @@ footer .altmenuler .bilesen .baslik {
 }
 
 footer .altmenuler .bilesen .bilesenic ul.bol2 {
-    column-count: 2;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-gap: 50px;
     -webkit-column-gap: 50px;
     -moz-column-gap: 50px
@@ -2863,6 +2862,15 @@ form.form .label-div input[type=text]:not([value=""])+label {
     padding: 20px 0 20px 60px
 }
 
+.iletisimsayfasi form.form:before {
+    content: '';
+    width: 2px;
+    height: 60%;
+    position: absolute;
+    left: -60px;
+    top: 20%;
+    background: #2d2d2d
+}
 
 .iletisimsayfasi form.form .baslik {
     margin: 20px 0;
@@ -4283,36 +4291,6 @@ header.active .logobar .logosag {
 }
 
 @media (max-width:991px) {
-    header .logobar .mobilbar {
-        height: 50px;
-    }
-
-    .mobil-profil-menu {
-        position: absolute;
-        width: 100%;
-        background: #2d2d2d;
-        left: 0px;
-        top: 49px;
-    }
-
-    .mobil-profil-menu ul li a {
-        color: white;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    .mobil-profil-menu ul li {
-        padding: 7px 15px;
-    }
-
-    .egitim-filtre_container {
-        width: 100% !important;
-    }
-
-    .egitim-filtre_container div {
-        margin-right: 0px !important;
-    }
-
     table.tablesepet tbody tr td .fiyat {
         width: 100% !important;
     }
@@ -4333,8 +4311,6 @@ header.active .logobar .logosag {
         justify-content: space-between !important;
         align-items: center;
         width: 100%;
-        margin-left: 0px !important;
-
     }
 
     #educationCategory {
@@ -4342,7 +4318,6 @@ header.active .logobar .logosag {
         justify-content: space-between !important;
         align-items: center;
         width: 100%;
-        margin-left: 0px !important;
     }
 
     #educationLevel {
@@ -4350,7 +4325,6 @@ header.active .logobar .logosag {
         justify-content: space-between !important;
         align-items: center;
         width: 100%;
-        margin-left: 0px !important;
     }
 
     #educationLocation {
@@ -4358,22 +4332,14 @@ header.active .logobar .logosag {
         justify-content: space-between !important;
         align-items: center;
         width: 100%;
-        margin-left: 0px !important;
     }
 
-    .egitim-filtre_container {
-        width: 100%;
+    .education-type_container {
+        display: block !important;
     }
-
-    .education-type_container div:last-child {
-        margin-bottom: 0px !important;
-    }
-
-
 
     .education-type_container div {
         margin-bottom: 10px;
-        width: 100% !important;
     }
 
     .baslik-genel_gorsel {
@@ -4462,12 +4428,8 @@ header.active .logobar .logosag {
         font-size: 11px;
     }
 
-    .education-type_search-container {
-        margin-top: 25px;
-    }
-
     .card__title a {
-        font-size: 17px;
+        font-size: 12px;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
@@ -4918,28 +4880,8 @@ header.active .logobar .logosag {
         height: 40px
     }
 
-    .square-body h4 {
-        font-weight: bold;
-    }
-
-    .card .card__description {
-        display: none !important;
-    }
-
-    .card:hover .card__description {
-        display: block !important;
-    }
-
-    .square-body tr {
-        font-size: 14px;
-    }
-
-    .square .button {
-        font-size: 14px;
-    }
-
     .dashboard section.dashboard-detay {
-        padding: 50px 0
+        padding: 20px 0
     }
 
     .dashboard section.dashboard-detay:before {
@@ -5036,7 +4978,6 @@ header.active .logobar .logosag {
     table.katilimcitablo tbody tr {
         border-bottom: 1px solid #f7f7f7
     }
-
 
 }
 
@@ -6378,24 +6319,10 @@ p,
     .child-altmenu_left {
         flex: 1 !important;
     }
-
     .egitim-detay_desc {
         width: 60% !important;
-        right: 0% !important;
+        right: 4% !important;
         top: 10% !important;
-    }
-}
-
-@media (min-width: 1550px) {
-
-    .egitim-detay_desc {
-        width: 60% !important;
-        right: 5% !important;
-        top: 10% !important;
-    }
-
-    .egitim-icerigi_text p {
-        margin-bottom: 114px;
     }
 }
 
@@ -7240,31 +7167,10 @@ p,
     cursor: pointer;
 }
 
-.video-popup-with-text.video-popup-wrapper::before {
-    border-radius: 0px !important;
-}
-
 @media only screen and (max-width: 600px) {
     .e-learning-box div {
         width: 50%;
         border-bottom: 1px solid #fff;
-    }
-
-    .video-popup-with-text.video-popup-wrapper::before {
-        border-radius: 0px;
-    }
-
-    .education-boxes {
-        bottom: -158% !important;
-    }
-
-    .course-sidebar {
-        height: 276px;
-    }
-
-    .signal-container {
-        top: 35%;
-        left: 37%;
     }
 
     .e-learning-box {
@@ -7373,20 +7279,8 @@ p,
 }
 
 .egitim-detay_container {
+    margin-top: 150px;
     background-color: #2d2d2d;
-}
-
-.dashboard-egitim-breadcrumb_baslik {
-    font-size: 32px;
-    text-align: center;
-}
-
-.dashboard-egitim-breadcrumb {
-    text-align: center;
-}
-
-.dashboard-egitim-breadcrumb>li+li:before {
-    color: #2d2d2d;
 }
 
 .egitim-detay_desc {
@@ -7404,22 +7298,8 @@ p,
     color: #2d2d2d;
     display: inline-block;
     font-weight: 600;
-    padding: 10px 25px;
+    padding: 6px 10px;
     margin-top: 25px;
-    transition: all 0.4s ease-in-out
-}
-
-.egitim-detay_button:hover {
-    background-color: #2d2d2d;
-    border: 1px solid #ffb600;
-}
-
-.egitim-detay_button:hover a {
-    color: #ffb600;
-}
-
-.egitim-detay_button a {
-    font-size: 17px;
 }
 
 .egitim-detay_text {

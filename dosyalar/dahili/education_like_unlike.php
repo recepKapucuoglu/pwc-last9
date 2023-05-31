@@ -27,7 +27,7 @@
 		
 			// Kayıt başarılıysa
 			if ($formKayit) {
-				echo getJson('ok', 'Eğitim favorilerinize eklenmiştir.','',$edu_id);
+				echo getJson('ok', 'Eğitim favorilerinize eklenmiştir.','', $edu_id);
 			} else {
 				echo getJson('error', 'Bir hata oluştu. Lütfen tekrar deneyiniz.');
 			}

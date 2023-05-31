@@ -24,15 +24,14 @@
 						<div class="baslik">İletişim</div>
 						<div class="bilesenic">
 							<ul>
-								<li>Vişnezade Mahallesi, Süleyman Seba Cad. BJK Plaza No:48 B Blok, 34357 <br />Akaretler / Beşiktaş / İstanbul</li>
+								<li>Premier kampüs Ofis Adres: Gürsel, İmrahor Cd. No: 29, B Blok 6.kat 34400 Kâğıthane/İstanbul</li>
 								<li><a href="tel:+90 (212) 376 59 80">0 (212) 376 59 80</a></li>
 								<li><a href="mailto:egitim@tr.pwc.com">egitim@tr.pwc.com</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 					<div class="bilesen">
 						<div class="baslik">Eğitimlerimiz</div>
 						<div class="bilesenic">
@@ -47,6 +46,19 @@
 								?>
 								<li><a href="<?php echo $value['seo_url']; ?>"><?php echo $value['baslik']; ?></a></li>
 								<?php } ?>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="bilesen">
+						<div class="baslik">Kolay Erişim</div>
+						<div class="bilesenic">
+							<ul class="bol2" style="-webkit-column-count: 2;">	
+								<li><a href="">Eğitim Takvimi</a></li>
+								<li><a href="">Hakkımızda</a></li>
+								<li><a href="">Sıkça Sorulan Sorular</a></li>
+								<li><a href="">Blog</a></li>
 							</ul>
 						</div>
 					</div>
@@ -153,7 +165,6 @@
 		<li><a href="/egitim-takvimi" target="_blank">Eğitim Takvimi</a></li>
 		<li><a href="/hakkimizda" target="_blank">Hakkımızda</a></li>
 		<li><a href="/sss">Sıkça Sorulan Sorular</a></li>
-		<li><a href="/blog">Blog</a></li>
 		<li><a href="/iletisim">İletişim</a></li>
 	</ul>
 </nav>

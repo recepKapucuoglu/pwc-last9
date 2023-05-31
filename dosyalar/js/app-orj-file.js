@@ -460,6 +460,48 @@ function afterLoad() {
 
 }
 
+$(".favori").click(function () {
+    console.log('tıklandı')
+
+    var params = 'id=' + $(this).attr('id');
+    $.ajax({
+        type: 'POST',
+        url: 'dosyalar/dahili/education_like_unlike.php',
+        data: params,
+        dataType: 'json',
+        success: function (cevap) {
+            if (cevap.status == 'ok') {
+                growl(cevap.msg);
+                $('#' + cevap.id).addClass("aktif");
+            }
+            else {
+                growl(cevap.msg, 'error', 'Hata !');
+            }
+        }
+    });
+
+});
+
+$(".favorireset").click(function () {
+    var params = 'id=' + $(this).attr('id');
+    $.ajax({
+        type: 'POST',
+        url: 'dosyalar/dahili/education_unlike.php',
+        data: params,
+        dataType: 'json',
+        success: function (cevap) {
+            if (cevap.status == 'ok') {
+                window.location.href = "https://www.okul.pwc.com.tr/dashboard-favorilerim.php";
+
+            }
+            else {
+                growl(cevap.msg, 'error', 'Hata !');
+            }
+        }
+    });
+
+});
+
 const egitimProgramlari = document.getElementById('egitimProgramlari');
 const altmenu = document.getElementById('altmenu');
 const altmenuTitle = document.getElementsByClassName('main-altmenu__title');
@@ -469,23 +511,8 @@ const childAltmenu = document.getElementById('childAltmenu');
 const anotherFilter = document.getElementById('another_filter_1');
 const yoneticiEgitimleri = document.getElementById('yonetici_egitimleri_1');
 const elearning = document.getElementById('e-learning');
-const mobilMenu = document.getElementById('mobil-profil-menu');
-const profilGoruntule = document.getElementById('profil-goruntule');
 const cozumOrtak = document.getElementById('cozum_ortakligi_platformu_1');
 const altMenuLi = document.getElementsByClassName('main-altmenu__li');
-
-
-let menuState = false;
-
-profilGoruntule.addEventListener('click', function () {
-    menuState = !menuState
-    if (menuState == true) {
-        mobilMenu.style.display = 'none'
-    } else {
-        mobilMenu.style.display = 'block'
-    }
-})
-
 
 egitimProgramlari.addEventListener('click', function () {
     if (altmenu.style.display == 'block') {
@@ -1599,45 +1626,8 @@ function profil_send() {
 
 //like
 
-$(".favori").click(function () {
-    var params = 'id=' + $(this).attr('id');
-    $.ajax({
-        type: 'POST',
-        url: 'dosyalar/dahili/education_like_unlike.php',
-        data: params,
-        dataType: 'json',
-        success: function (cevap) {
-            if (cevap.status == 'ok') {
-                growl(cevap.msg);
-                $('#' + cevap.id).addClass("aktif");
-            }
-            else {
-                growl(cevap.msg, 'error', 'Hata !');
-            }
-        }
-    });
 
-});
 
-$(".favorireset").click(function () {
-    var params = 'id=' + $(this).attr('id');
-    $.ajax({
-        type: 'POST',
-        url: 'dosyalar/dahili/education_unlike.php',
-        data: params,
-        dataType: 'json',
-        success: function (cevap) {
-            if (cevap.status == 'ok') {
-                window.location.href = "https://www.okul.pwc.com.tr/dashboard-favorilerim.php";
-
-            }
-            else {
-                growl(cevap.msg, 'error', 'Hata !');
-            }
-        }
-    });
-
-});
 
 jQuery(document).ready(function ($) {
     // Get current path and find target link

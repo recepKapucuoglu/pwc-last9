@@ -484,13 +484,21 @@ else if ($_SESSION['dashboardUser'] == "uyeol_step1") {
                                         <input type="password" name="sifre2" id="sifre2" value="" required />
                                     </div>
 
-                                    <div class="label-div2 temizle">
+                                    <div class="label-div2 temizle" style="display: flex; flex-direction: column;">
+                                        <span class="checkbox-div">
+                                            <input class="magic-checkbox" type="checkbox" id="pwc_calisaniyim" name="pwc_calisaniyim" required />
+                                            <label for="pwc_calisaniyim" style="font-size:13px; float:left">
+                                            <a 
+                                             style="text-decoration:underline !important">Eski PwC Çalışanıyım</a> 
+                                            </label>
+                                        </span>
                                         <span class="checkbox-div">
                                             <input class="magic-checkbox" type="checkbox" id="sozlesme" name="sozlesme" required />
                                             <label for="sozlesme" style="font-size:13px; float:left"><a href="uyelik-sozlesmesi"
                                                     target="_blank" style="text-decoration:underline !important">Üyelik
                                                     Sözleşmesi'ni</a> okudum, onaylıyorum.</label>
                                         </span>
+
                                         <span class="checkbox-div">
                                             <input class="magic-checkbox" type="checkbox" id="aydinlatma" name="aydinlatma"
                                                 required />

@@ -230,22 +230,12 @@ include('inc.php');
 			<div class="mobilbar" style="display:none;">
 				<div class="mobil_menuac"><i class="fas fa-bars"></i></div>
 				<?php if ($_SESSION['dashboardUser']) { ?>
-					<a id="profil-goruntule" class="login"><i class="fas fa-user"></i> Hesabımı Görüntüle</a>
+					<a href="/dashboard.php" class="login"><i class="fas fa-user"></i> Hesabımı Görüntüle</a>
 				<?php } else { ?>
 					<a href="/uyelik" class="login"><i class="fas fa-user"></i> Giriş Yap/Kaydol</a>
 				<?php } ?>
 				<!--<a href="login.php" class="login"><i class="fas fa-user"></i> Giriş Yap/Kaydol</a>-->
 				<div class="aramaac"><i class="fas fa-search"></i></div>
-				<div class="mobil-profil-menu" id="mobil-profil-menu" style="display:none">
-					<ul>
-						<li><a href="/dashboard.php">Dashboard</a></li>
-						<li><a href="/dashboard-hesabim.php">Profil Bilgileri</a></li>
-						<li><a href="/dashboard-favorilerim.php">Favoriler</a></li>
-						<li><a href="/dashboard-egitimlerim.php">Satın Alınan Eğitimler</a></li>
-						<li><a href="/dashboard-e-learning.php">E-Learning Eğitimlerim</a></li>
-						<li><a href="/logout.php">Çıkış Yap</a></li>
-					</ul>
-				</div>
 			</div>
 			<div class="arama_popup" style="display:none;">
 				<div class="arama_kapat"></div>
@@ -408,6 +398,7 @@ include('inc.php');
 					<li><a href="/egitim-takvimi.php">Eğitim Takvimi</a></li>
 					<li><a href="/hakkimizda">Hakkımızda</a></li>
 					<li><a href="/sss">Sıkça Sorulan Sorular</a></li>
+					<li><a href="/blog">Blog</a></li>
 					<li><a href="/iletisim">İletişim</a></li>
 				</ul>
 			</div>

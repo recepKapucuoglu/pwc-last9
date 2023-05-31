@@ -16,21 +16,24 @@ $page_url = t_decode($page_url);
 
 	$db->where('seo_url',$page_url);
 	$page_icerik= $db->getOne('page');
-	$page_icerik=t_decode($page_icerik['aciklama']);
+	$icerik=t_decode($page_icerik['aciklama']);
+    $baslik=t_decode($page_icerik['baslik']);
+    $resim_alt_etiket=t_decode($page_icerik['resim_alt_etiket']);
+
 
 ?>
 
 
 <section id="sayfaust" style="background-image:url(dosyalar/images/sayfaust-bg.jpg);">
 	<div class="basliklar">
-		<div class="baslik">E-LEARNING</div>
+		<div class="baslik"><?php echo $baslik ?></div>
 		<ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
 			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 				<a itemprop="item" href="/"><span itemprop="name">Anasayfa</span></a>
 				<meta itemprop="position" content="1" />
 			</li>
 			<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-				<a itemprop="item" href="javascript:;"><span itemprop="name">E-Learning Eğitimleri</span></a>
+				<a itemprop="item" href="javascript:;"><span itemprop="name"><?php echo $resim_alt_etiket ?></span></a>
 				<meta itemprop="position" content="2" />
 			</li>
 		</ol>
@@ -38,7 +41,7 @@ $page_url = t_decode($page_url);
 </section>
 <section style="margin-top:30px">
 <div class="container"><?php
- echo  $page_icerik;
+ echo  $icerik ;
 ?></div>
 	<div class="education-type">
 		<div class="container education-type__container">

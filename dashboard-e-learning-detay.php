@@ -24,10 +24,21 @@ if ($_SESSION['dashboardUser'] && $isHaving) { ?>
         <div class="rbt-course-details-area">
             <div class="egitim-detay_bread">
                 <div class="container">
-                    <h1 class="egitim-detay_baslik">EĞİTİMLERİMİZ</h1>
-                    <h2 style="font-size:30px">
-                        <?php echo $egitim_adi; ?>
-                    </h2>
+                <div class="dashboard-egitim-breadcrumb_baslik">EĞİTİMLERİMİZ</div>
+                    <ol class="breadcrumb dashboard-egitim-breadcrumb" style="background:transparent" itemscope itemtype="http://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="/"><span itemprop="name">Anasayfa</span></a>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="dashboard-e-learning"><span itemprop="name">E-Learning Eğitimlerim</span></a>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                            <a itemprop="item" href="javascript:;"><span itemprop="name"><?php echo $egitim_adi; ?></span></a>
+                            <meta itemprop="position" content="3" />
+                        </li>
+                    </ol>
                 </div>
             </div>
             <div class="egitim-detay_container">

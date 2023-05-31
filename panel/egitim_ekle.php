@@ -59,6 +59,7 @@
 					'aciklama' 			=> t_code($_POST['aciklama']),
 					'kimler_katilmali' 	=> t_code($_POST['kimler_katilmali']),
 					'neden_katilmali' 	=> t_code($_POST['neden_katilmali']),
+					'not' 				=> t_code($_POST['not']),
 					'egitim_suresi' 	=> t_code($_POST['egitim_suresi']),
 					'resim_alt_etiket' 	=> tirnak_replace($_POST['resim_alt_etiket']),
 					'durum' 			=> tirnak_replace($_POST['durum']),
@@ -202,6 +203,12 @@
 									<label class="col-lg-3 control-label text-lg-right pt-2" for="inputDefault">Neden Katılmalı</label>
 									<div class="col-md-8">
 										<textarea id="maxlength_textarea" class="ckeditor form-control" name="neden_katilmali" maxlength="10000" rows="10"></textarea>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 control-label text-lg-right pt-2" for="inputDefault">Not</label>
+									<div class="col-md-8">
+										<textarea id="maxlength_textarea" class="ckeditor form-control" name="not" maxlength="10000" rows="10"></textarea>
 									</div>
 								</div>
 								<div class="form-group row">

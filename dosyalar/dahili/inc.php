@@ -63,9 +63,11 @@ if ($page_url_egitim[0] == "/egitimlerimiz") {
 	$url_rewrite = "blog.php";
 } else if ($prev_url == "sss" or $son_url == "sss") {
 	$url_rewrite = "sss.php";
-}else if ($prev_url == "e-learning-egitimleri" or $son_url == "e-learning-egitimleri") {
-	$url_rewrite = "e-learning-egitimleri.php";
-} else {
+}
+// else if ($prev_url == "e-learning-egitimleri" or $son_url == "e-learning-egitimleri") {
+// 	$url_rewrite = "e-learning-egitimleri.php";
+// }
+ else {
 	$page_url = end($page_url);
 	if (strpos($page_url, '?') !== false) {
 

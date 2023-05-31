@@ -68,7 +68,8 @@
 				'kayit_user' 		=> $usr_id,
 				'kayit_tarihi' 		=> $db->now(),
 				'education_level_id'=> $_POST['egitim_level'],
-				'type_id'=>$_POST['egitim_type'],
+				'type_id'			=>$_POST['egitim_type'],
+				'not' 				=> t_code($_POST['not']),
 			);
 			$db->where ('id', $eski_id);
 			$id = $db->update ('education', $data);
@@ -122,6 +123,7 @@
 			$video              =   $value['video'];
 			$level              =   $value['education_level_id'];
 			$type				=	$value['type_id'];
+			$not				= 	$value['not'];
 		}
 		// $db->where('id',intval($_GET["id"]));
 		// $res=$db->getOne('education_categories');	
@@ -266,6 +268,12 @@
 								<label class="col-lg-3 control-label text-lg-right pt-2" for="inputDefault">Neden Katılmalı</label>
 								<div class="col-md-8">
 									<textarea id="maxlength_textarea" class="ckeditor form-control" name="neden_katilmali" maxlength="10000" rows="10"><?php echo $neden_katilmali; ?></textarea>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-lg-3 control-label text-lg-right pt-2" for="inputDefault">Not</label>
+								<div class="col-md-8">
+									<textarea id="maxlength_textarea" class="ckeditor form-control" name="not" maxlength="10000" rows="10"><?php echo $not; ?></textarea>
 								</div>
 							</div>
 							<div class="form-group row">

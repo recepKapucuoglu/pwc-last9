@@ -38,9 +38,10 @@ foreach ($results as $value) {
 	// $neden_katilmali=t_decode($value['neden_katilmali']);
 	//geçici edit***************** üstteki 2 veriyi education_listten alacagız.
 	$db->where('id',$edu_id);
-	$result=$db->getOne('education_list');
+	$result=$db->getOne('education');
 	$kimler_katilmali=t_decode($result['kimler_katilmali']);
 	$neden_katilmali=t_decode($result['neden_katilmali']);
+	$not=t_decode($result['not']);
 	//********* */
 	$etiketlerExplode = explode(",", $etiketler);
 
@@ -64,6 +65,7 @@ $resultsCategories = $db->get('categories');
 foreach ($resultsCategories as $valueCategories) {
 	$kategoriBaslik=$valueCategories['baslik'];
 }
+
 if ($_SESSION['dashboardUser']){
 	$db->where('user_id', $_SESSION['dashboardUserId']);
 	$resultsFavorite = $db->get('web_user_favorite');
@@ -110,8 +112,12 @@ if ($_SESSION['dashboardUser']){
 							<header>
 								<h1><?php echo $egitim_adi; ?></h1>
 								<div class="etkilesim">
-									<?php if ($_SESSION['dashboardUser']){ if (in_array($edu_id, $favori_array)) $aktifEdu = "aktif"; else $aktifEdu = ""; ?><div class="favori <?php echo $aktifEdu; ?>" id="<?php echo $edu_id; ?>">Favorilere Ekle</div><?php } ?>
-									<div class="paylas">
+									
+									<?php
+									if ($_SESSION['dashboardUser']){ if (in_array($edu_id, $favori_array)) $aktifEdu = "aktif"; else $aktifEdu = ""; ?>
+									<div class="favori <?php echo $aktifEdu; ?>" id="<?php echo $edu_id; ?>">Favorilere Ekle</div>
+									<?php } ?>
+									<div class="paylas" id="deneme">
 										<ul>
 											<li>
 												<span><i class="fas fa-share-alt"></i> Paylaş</span>
@@ -170,6 +176,14 @@ if ($_SESSION['dashboardUser']){
 										<strong class="schema-faq-question"><i class="fas fa-user-plus"></i> Neden Katılmalı?</strong>
 										<div class="schema-faq-answer" style="">
 											<?php echo $neden_katilmali; ?>
+										</div>
+									</div>
+									<?php } ?>
+									<?php if($not<>"") { ?>
+									<div class="schema-faq-section aktif">
+										<strong class="schema-faq-question"><i class="fas fa-user-plus"></i> Not</strong>
+										<div class="schema-faq-answer" style="">
+											<?php echo $not; ?>
 										</div>
 									</div>
 									<?php } ?>
@@ -411,6 +425,7 @@ if ($_SESSION['dashboardUser']){
 	<?php include('dosyalar/dahili/ebulten.php');?>
 <?php include('dosyalar/dahili/footer.php');?>
 <script>
+
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 200) {
