@@ -7321,6 +7321,10 @@ p,
 
 .square-body .h1 a {
     color: #2d2d2d;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .square img {

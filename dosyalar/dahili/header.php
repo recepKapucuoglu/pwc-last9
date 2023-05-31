@@ -384,21 +384,27 @@ include('inc.php');
 											</a>
 										</li>
 										<li class="main-altmenu__li">
-											<a class="main-altmenu__title" id="cozum_ortakligi_platformu">
-												<span>Platform / Zirve</span>
+											<!-- <a   href="/platform/" class="main-altmenu__title" id="cozum_ortakligi_platformu">
+												<span>21. Çözüm Ortaklığı Platformu</span>
 												<img src="dosyalar/images/arrow-right.png" class="filter-white" />
 											</a>
 											<ul class="sub-altmenu col-md-3" id="cozum_ortakligi_platformu_1">
 												<li class="sub-list">
 													<span><a style="padding:0px; background-color:transparent !important; color:#fff !important" href="/platform/" > 21. Çözüm Ortaklığı Platformu </a></span>
 												</li>
-											</ul>
+											</ul> -->
+										</li>
+										<li class="main-altmenu__li">
+											<a href="/platform/" class="main-altmenu__title">
+												<span>21. Çözüm Ortaklığı Platformu</span>
+											</a>
 										</li>
 										<li class="main-altmenu__li">
 											<a href="/egitimlerimiz" class="main-altmenu__title">
 												<span>Tüm Eğitimleri Görüntüle</span>
 											</a>
 										</li>
+										
 									</ul>
 
 								</div>
